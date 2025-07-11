@@ -1,0 +1,107 @@
+/* Contenedor principal */
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.contact-item:hover {
+  background-color: #f5f6f6;
+}
+
+/* Avatar */
+.contact-item__avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 1px solid #e9edef;
+}
+
+/* Contenido */
+.contact-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-item__name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111b21;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-item__last-message {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  color: #667781;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-item__time {
+  font-size: 0.75rem;
+  color: #667781;
+  margin-top: 0.25rem;
+}
+
+/* Notificaciones no leídas */
+.contact-item__unread {
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contact-item {
+    padding: 0.5rem;
+  }
+  
+  .contact-item__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.75rem;
+  }
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .contact-item {
+    border-bottom-color: #2a3942;
+  }
+  
+  .contact-item:hover {
+    background-color: #202c33;
+  }
+  
+  .contact-item__name {
+    color: #e9edef;
+  }
+  
+  .contact-item__last-message,
+  .contact-item__time {
+    color: #8696a0;
+  }
+  
+  .contact-item__avatar {
+    border-color: #2a3942;
+  }
+}

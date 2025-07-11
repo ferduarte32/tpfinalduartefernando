@@ -1,0 +1,101 @@
+.message-form {
+  display: flex;
+  padding: 8px 12px;
+  background: #f0f2f5;
+  align-items: center;
+  border-top: 1px solid #e9edef;
+  position: sticky;
+  bottom: 0;
+}
+
+.form-group {
+  flex: 1;
+  position: relative;
+  margin-right: 8px;
+}
+
+.message-input {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 15px;
+  resize: none;
+  max-height: 100px;
+  outline: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.send-button {
+  background: #00a884;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  flex-shrink: 0;
+}
+
+.send-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.send-button svg {
+  fill: currentColor;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 12px;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+
+.send-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsividad mejorada */
+@media (max-width: 600px) {
+  .message-form {
+    padding: 6px 8px;
+  }
+  
+  .message-input {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  .send-button {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .message-form {
+    background: #1f2c33;
+    border-color: #2a3942;
+  }
+  
+  .message-input {
+    background: #2a3942;
+    color: #e9edef;
+  }
+}

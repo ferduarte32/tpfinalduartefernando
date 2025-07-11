@@ -1,0 +1,102 @@
+/* src/Screens/HomeScreen/HomeScreen.css */
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f2f5;
+  color: #111b21;
+}
+
+.home-screen__header {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9edef;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.home-screen__link {
+  text-decoration: none;
+  color: #00a884;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.home-screen__link:hover {
+  color: #007a63;
+}
+.home-screen__back-button {
+  background: none;
+  border: none;
+  color: #00a884;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+.home-screen__back-button:hover {
+  text-decoration: underline;
+}
+
+.home-screen__subtitle {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.home-screen__alert-button {
+  background-color: #00a884;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.home-screen__alert-button:hover {
+  background-color: #007f6a;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .home-screen {
+    background-color: #111b21;
+    color: #e9edef;
+  }
+
+  .home-screen__header {
+    background-color: #202c33;
+    border-color: #2a3942;
+  }
+
+  .home-screen__link {
+    color: #53bdeb;
+  }
+
+  .home-screen__alert-button {
+    background-color: #53bdeb;
+  }
+
+  .home-screen__alert-button:hover {
+    background-color: #3a9ac6;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-screen__header {
+    padding: 0.75rem;
+  }
+
+  .home-screen__alert-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,170 @@
+/* Contenedor principal del mensaje */
+.message {
+  max-width: 75%;
+  margin: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  position: relative;
+  word-wrap: break-word;
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(0.5rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mensajes propios */
+.message--own {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  margin-left: auto;
+  border-bottom-right-radius: 0.25rem;
+}
+
+/* Mensajes de otros */
+.message--other {
+  background-color: #ffffff;
+  align-self: flex-start;
+  margin-right: auto;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* Contenido del mensaje */
+.message__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.message__text {
+  margin: 0 0 0.25rem 0;
+  white-space: pre-wrap;
+  color: #111b21;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+
+/* Metadatos del mensaje */
+.message__meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.message__time {
+  font-size: 0.6875rem;
+  color: #667781;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+/* Estados de mensaje */
+.message__status {
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.message__status[data-status="no-recibido"] {
+  color: #667781;
+}
+
+.message__status[data-status="no-visto"] {
+  color: #53bdeb;
+}
+
+.message__status[data-status="visto"] {
+  color: #00a884;
+}
+
+/* Botón eliminar */
+.message__delete {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.25rem;
+  opacity: 0;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.message:hover .message__delete {
+  opacity: 1;
+}
+
+.message__delete:hover {
+  color: #ff4444;
+}
+
+/* Mensajes multimedia */
+.message__media {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mensajes con enlaces */
+.message__link {
+  color: #007bff;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.message__link:hover {
+  text-decoration: underline;
+}
+
+/* Efectos hover */
+.message--own:hover {
+  background-color: #d1f7c4;
+}
+
+.message--other:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .message {
+    max-width: 85%;
+    padding: 0.5rem 0.75rem;
+    margin: 0.25rem 0.5rem;
+  }
+  
+  .message__text {
+    font-size: 0.875rem;
+  }
+  
+  .message__delete {
+    opacity: 1; /* Siempre visible en móviles */
+  }
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .message--other {
+    background-color: #2a3942;
+    color: #e9edef;
+  }
+  
+  .message__text {
+    color: #e9edef;
+  }
+  
+  .message__time {
+    color: #a3b3bc;
+  }
+  
+  .message--other:hover {
+    background-color: #2a3942;
+  }
+  
+  .message__link {
+    color: #53bdeb;
+  }
+}

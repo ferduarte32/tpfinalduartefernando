@@ -1,0 +1,50 @@
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f0f2f5;
+  border-bottom: 1px solid #e9edef;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-button, .menu-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #54656f;
+}
+
+.contact-info {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.contact-info h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #111b21;
+}
+
+.contact-info p {
+  margin: 0.25rem 0 0;
+  font-size: 0.8125rem;
+  color: #667781;
+}
+
+@media (prefers-color-scheme: dark) {
+  .chat-header {
+    background-color: #202c33;
+    border-color: #2a3942;
+  }
+  
+  .back-button, .menu-button {
+    color: #a3b3bc;
+  }
+  
+  .contact-info h2 {
+    color: #e9edef;
+  }
+}
