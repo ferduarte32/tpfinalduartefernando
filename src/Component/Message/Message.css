@@ -83,7 +83,7 @@
 .message__delete {
   background: none;
   border: none;
-  color: inherit;
+  color: red;
   cursor: pointer;
   padding: 0.25rem;
   opacity: 0;
@@ -149,15 +149,15 @@
 @media (prefers-color-scheme: dark) {
   .message--other {
     background-color: #2a3942;
-    color: #e9edef;
+    color: #000000;
   }
   
   .message__text {
-    color: #e9edef;
+    color: #000000;
   }
   
   .message__time {
-    color: #a3b3bc;
+    color: #000000;
   }
   
   .message--other:hover {
