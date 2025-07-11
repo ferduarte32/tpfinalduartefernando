@@ -53,7 +53,6 @@ export default function HomeScreen() {
 
       <main className="chat-wrapper">
         <Chat />
-        <NewMessageForm />
       </main>
     </div>
   );
