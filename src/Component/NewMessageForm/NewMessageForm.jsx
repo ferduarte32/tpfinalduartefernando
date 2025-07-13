@@ -1,10 +1,12 @@
 import React, { useContext, useState, useRef } from 'react'
+import { useParams } from 'react-router-dom'
 import { MessagesContext } from '../../Context/MessagesContext'
 import { FaSmile, FaPaperclip, FaMicrophone, FaPaperPlane } from 'react-icons/fa'
-import EmojiPicker from 'emoji-picker-react' // Opcional: si querés usarlo, sino quitá esta parte
+import EmojiPicker from 'emoji-picker-react'
 import './NewMessageForm.css'
 
 export default function NewMessageForm() {
+  const { contact_id } = useParams()
   const { addNewMessage } = useContext(MessagesContext)
   const [text, setText] = useState('')
   const [showEmojiPicker, setShowEmojiPicker] = useState(false)
@@ -15,10 +17,10 @@ export default function NewMessageForm() {
     setShowEmojiPicker(false)
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     if (text.trim().length >= 1) {
-      addNewMessage(text)
+      await addNewMessage(text, contact_id)
       setText('')
     }
   }
