@@ -6,7 +6,7 @@ const mook_data = {
       last_time_connected: "14:19",
       img: "https://fercode.com/avatars/messi.jpg",
       nombreIA: "Messi 🤖",
-      avatarIA: "/avatars/messi.jpg",
+      avatarIA: "https://fercode.com/avatars/messi.jpg",
       messages: []
     },
     {
@@ -15,7 +15,7 @@ const mook_data = {
       last_time_connected: "13:10",
       img: "https://fercode.com/avatars/dibu.jpg",
       nombreIA: "Dibu 🤖",
-      avatarIA: "/avatars/dibu.jpg",
+      avatarIA: "https://fercode.com/avatars/dibu.jpg",
       messages: []
     },
     {
@@ -24,7 +24,7 @@ const mook_data = {
       last_time_connected: "15:40",
       img: "https://fercode.com/avatars/otamendi.jpg",
       nombreIA: "Ota 🤖",
-      avatarIA: "/avatars/otamendi.jpg",
+      avatarIA: "https://fercode.com/avatars/otamendi.jpg",
       messages: []
     },
     {
@@ -33,7 +33,7 @@ const mook_data = {
       last_time_connected: "12:00",
       img: "https://fercode.com/avatars/molina.jpg",
       nombreIA: "Molina 🤖",
-      avatarIA: "/avatars/molina.jpg",
+      avatarIA: "https://fercode.com/avatars/molina.jpg",
       messages: []
     },
     {
@@ -42,7 +42,7 @@ const mook_data = {
       last_time_connected: "16:30",
       img: "https://fercode.com/avatars/depaul.jpg",
       nombreIA: "De Paul 🤖",
-      avatarIA: "/avatars/depaul.jpg",
+      avatarIA: "https://fercode.com/avatars/depaul.jpg",
       messages: []
     },
     {
@@ -51,7 +51,7 @@ const mook_data = {
       last_time_connected: "10:45",
       img: "https://fercode.com/avatars/enzo.jpg",
       nombreIA: "Enzo 🤖",
-      avatarIA: "/avatars/enzo.jpg",
+      avatarIA: "https://fercode.com/avatars/enzo.jpg",
       messages: []
     },
     {
@@ -60,7 +60,7 @@ const mook_data = {
       last_time_connected: "11:15",
       img: "https://fercode.com/avatars/dimaria.jpg",
       nombreIA: "Fideo 🤖",
-      avatarIA: "/avatars/dimaria.jpg",
+      avatarIA: "https://fercode.com/avatars/dimaria.jpg",
       messages: []
     },
     {
@@ -69,7 +69,7 @@ const mook_data = {
       last_time_connected: "14:00",
       img: "https://fercode.com/avatars/macallister.jpg",
       nombreIA: "MacAllister 🤖",
-      avatarIA: "/avatars/macallister.jpg",
+      avatarIA: "https://fercode.com/avatars/macallister.jpg",
       messages: []
     },
     {
@@ -78,7 +78,7 @@ const mook_data = {
       last_time_connected: "17:10",
       img: "https://fercode.com/avatars/julian.jpg",
       nombreIA: "Araña 🤖",
-      avatarIA: "/avatars/julian.jpg",
+      avatarIA: "https://fercode.com/avatars/julian.jpg",
       messages: []
     },
     {
@@ -87,16 +87,16 @@ const mook_data = {
       last_time_connected: "18:00",
       img: "https://fercode.com/avatars/mbappe.jpg",
       nombreIA: "Mbappé 🤖",
-      avatarIA: "/avatars/mbappe.jpg",
+      avatarIA: "https://fercode.com/avatars/mbappe.jpg",
       messages: []
     },
     {
       id: 11,
       name: "Marcos Acuña",
       last_time_connected: "09:00",
-      img: "https://fercode.com/avatars/acuña.jpg",
+      img: "https://fercode.com/avatars/acuna.jpg",
       nombreIA: "Huevo 🤖",
-      avatarIA: "/avatars/acuña.jpg",
+      avatarIA: "https://fercode.com/avatars/acuna.jpg",
       messages: []
     },
     {
@@ -105,7 +105,7 @@ const mook_data = {
       last_time_connected: "08:00",
       img: "https://fercode.com/avatars/cuti.jpg",
       nombreIA: "Cuti 🤖",
-      avatarIA: "/avatars/cuti.jpg",
+      avatarIA: "https://fercode.com/avatars/cuti.jpg",
       messages: []
     }
   ]
